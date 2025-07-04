@@ -23,6 +23,8 @@ module fxp_add #(parameter A_width_int=8,
                 
                 wire signed[result_width_int+result_width_frac-1:0] result= $signed(ina_adj) + $signed(inb_adj);
 
+                //resising both variables ina_adj and inb_adj to match so that we can add them both= easier to do it if they are in the same format
+
                 fxp_width #(.input_width_int(A_width_int),
                             .input_width_frac(A_width_frac),
                             .output_width_int(max_width_int),
