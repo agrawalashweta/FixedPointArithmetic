@@ -7,11 +7,11 @@ Verilog- Fixed Point Library includes
 5. Supports converting to and from single precision floating point format. (IEEE-754)
 6. Some of the operations above are pipelined to increase their throughput. (the ones who have a lengthy combinational procedure)
 
-#Fixed Point Format
+# Fixed Point Format
 In digital hardware systems like FPGAs or embedded processors, fixed-point representation is used to represent real numbers without using floating-point hardware. This format assigns a fixed number of bits to the integer and fractional parts of a number.
 The fixed point format is denoted as  Q(m.n) where m represents the width of integer part and n the width of fractional part.
 
-#Project Focus
+# Project Focus
 This project focuses on implementing fixed-point arithmetic operations using Verilog HDL. The goal is to design, simulate, and verify digital circuits capable of performing precise arithmetic on numbers represented in fixed-point format (e.g., Qm.n), which is efficient for hardware systems without floating-point units.
 
 Key objectives include:
