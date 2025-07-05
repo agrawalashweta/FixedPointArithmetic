@@ -29,7 +29,7 @@ module fxp_addsub #(
                     wire[B_edited_width_int+ B_width_frac-1 :0 ] inb_edited ;
                     assign inb_edited = sub? (~inb_widthadj + ONE) : (inb_widthadj);
 
-                    wire[result_width_int + result_width_frac-1:0] result;
+                    wire signed[result_width_int + result_width_frac-1:0] result;
                     assign result= $signed(ina_adj) + $signed(inb_adj);
 
                     fxp_width #(.input_width_int(B_width_int),
