@@ -48,10 +48,10 @@ fxp_div module performs signed fixed point division using combinational logic an
 6. Flexible output scaling with internal auto-alignment logic.
 
 # Tools and Technologies
-Language: Verilog (SystemVerilog Compatible)
-Simulator: Icarus Verilog and GTKwave/ EDA Playground 
-Version Control: Git
-Testing: Custom Verilog Testbenches
+1. Language: Verilog (SystemVerilog Compatible)
+2. Simulator: Icarus Verilog and GTKwave/ EDA Playground 
+3. Version Control: Git
+4. Testing: Custom Verilog Testbenches
 
 Contributions are most welcome! If you'd like to add more modules, enhance the existing ones or bring up issues about some edge-cases that might not have been considered, feel free to open a pull request or issue.
 
