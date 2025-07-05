@@ -93,7 +93,7 @@ module fxp_div #(parameter A_width_int=8,
                     end
 
                     if (ROUND && ~(&out)) begin
-                        //if the output isnt already maxed out then rounding up
+                        //if the output isnt already maxed out then rounding up if its near to the quotient then
                         acct= acc + (divisor_adj>> output_width_frac);
                         if ((acct - dividend_adj) < (dividend_adj-acc)) 
                         begin
